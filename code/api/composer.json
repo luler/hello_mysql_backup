@@ -1,0 +1,33 @@
+{
+    "require": {
+        "php": ">=7.1",
+        "easyswoole/easyswoole": "3.4.6",
+        "easyswoole/redis-pool": "2.2.1",
+        "easyswoole/orm": "1.5.3",
+        "easyswoole/fast-cache": "2.0.1",
+        "luler/helpers": "dev-master",
+        "doctrine/dbal": "^3.2",
+        "hollodotme/crontab-validator": "^2.0",
+        "maennchen/zipstream-php": "^2.1",
+        "asar/anodoc": "^0.1.1",
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        },
+        "files": [
+            "App/common.php"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "require-dev": {
+        "easyswoole/hot-reload": "^0.1.2",
+        "robmorgan/phinx": "^0.12.4"
+    }
+}

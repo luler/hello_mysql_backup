@@ -1,0 +1,18 @@
+services:
+  php_nginx:
+    image: registry.cn-shenzhen.aliyuncs.com/luler/linux_php_nginx:php7.3
+    restart: always
+    privileged: true
+    ports:
+      - 6033:80
+      #- 9911:9001
+    volumes:
+      - ./config/nginx/conf:/usr/local/nginx/conf
+      - ./config/php/etc:/usr/local/php/etc
+      - ./config/init.sh:/init.sh
+      - ./code/api:/home/wwwroot/api
+      - ./code/web/dist:/home/wwwroot/web/dist
+      - ./code/mydumper-0.10.7-2.el8.x86_64.rpm:/home/wwwroot/mydumper-0.10.7-2.el8.x86_64.rpm
+      - ./runtime/wwwlogs:/home/wwwlogs
+      - ./config/supervisor/supervisord.conf:/etc/supervisord.conf
+      - ./config/supervisor/supervisord.d:/etc/supervisord.d

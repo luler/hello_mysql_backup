@@ -1,0 +1,14 @@
+.idea
+/.idea/
+#/vendor
+/composer.lock
+
+/Log/
+/Temp/
+/Temp2/
+
+#.env
+
+produce.env
+
+test.sqlite3

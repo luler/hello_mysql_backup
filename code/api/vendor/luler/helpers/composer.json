@@ -1,0 +1,39 @@
+{
+  "name": "luler/helpers",
+  "description": "整理php开发时常用的助手函数、工具类，以便于快速开发",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/luler/helpers",
+  "authors": [
+    {
+      "name": "luler",
+      "email": "1207032539@qq.com",
+      "homepage": "https://github.com/luler",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "ext-iconv": "*",
+    "ext-mbstring": "*",
+    "ext-zip": "*",
+    "ext-openssl": "*",
+    "ext-posix": "*",
+    "ext-pcntl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Luler\\Helpers\\": "src/Helpers"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  }
+}
